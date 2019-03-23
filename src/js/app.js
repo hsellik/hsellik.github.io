@@ -115,4 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
     "retina_detect": true
   });
 
+  document.getElementById('java-years').innerHTML = new Date().getFullYear() - 2015;
+
 }, false);
