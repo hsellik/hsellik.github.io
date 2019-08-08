@@ -1,19 +1,19 @@
 # Site settings
-title: Hendrig Sellik
-description: Hendrig Sellik's home page
+title: Hendrig Sellik's home page
+description: Welcome to my home page. I am a passionate developer, currently pursuing a Master's degree in Computer Science at TU Delft. As my master thesis, I am aiming to use AI techniques to enhance code reviews.
 #baseurl: "/particle" # the subpath of your site, e.g. /blog
 #url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Hendrig Sellik
 user_description:
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  DontSeeSharp
-gplus_username:  lorem_ipsum
+email: blank
+twitter_username: Hendrig Sellik
+github_username:  hsellik
+
 
 # Google-analytics
 google-analytics:
   id: "UA-136769298-1"
 
-exclude: ['package.json', 'src' , 'node_modules']
+exclude: ['package.json', 'src' , 'node_modules', 'vendor']
