@@ -1,6 +1,5 @@
 # Site settings
 title: Hendrig Sellik's home page
-description: Welcome to my home page. I am a passionate developer, currently pursuing a Master's degree in Computer Science at TU Delft. As my master thesis, I am aiming to use AI techniques to enhance code reviews.
 #baseurl: "/particle" # the subpath of your site, e.g. /blog
 url: https://hsellik.github.io
 
