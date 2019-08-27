@@ -15,4 +15,7 @@ github_username:  hsellik
 google-analytics:
   id: "UA-136769298-1"
 
+plugins:
+  - jekyll-sitemap
+
 exclude: ['package.json', 'src' , 'node_modules', 'vendor']
