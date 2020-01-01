@@ -1,10 +1,11 @@
 <div class="user-details">
-    <h1> My Expertise </h1>
+    <h1> About Me </h1>
     <p> {{site.user_description}} </p>
+    <h1> My Expertise </h1>
 </div>
 <div class="user">
     <div class="tech">
-        <h2>Backend</h2>
+        <h2 class="about-short-heading">Backend</h2>
         <i class="devicon-java-plain-wordmark colored"></i>
         <i class="devicon-python-plain-wordmark colored"></i>
         <i class="devicon-postgresql-plain colored"></i>
@@ -15,7 +16,7 @@
         </p>
     </div>
     <div class="tech">
-        <h2>Frontend</h2>
+        <h2 class="about-short-heading">Frontend</h2>
         <i class="devicon-javascript-plain colored"></i>
         <i class="devicon-react-original colored"></i>
         <i class="devicon-nodejs-plain colored"></i>
@@ -25,7 +26,16 @@
             as NPM, Gulp, Sass and Yarn.</p>
     </div>
     <div class="tech">
-        <h2>Other</h2>
+        <h2>Machine Learning</h2>
+        <img class="svg-image" alt="Tensorflow" src="{{ "/assets/svg/tensorflow.svg" | prepend: site.baseurl }}" />
+        <img class="svg-image" alt="Keras" src="{{ "/assets/svg/keras.svg" | prepend: site.baseurl }}" />
+        <img class="svg-image" alt="Numpy" src="{{ "/assets/svg/numpy.svg" | prepend: site.baseurl }}" />
+        <p> During my studies at Delft University of Technology I have used Keras API
+            running on top of Tensorflow to reproduce state-of-the-art research in addition
+            to libraries such as numpy and pandas to ease data manipulation.</p>
+    </div>
+    <div class="tech">
+        <h2 class="about-short-heading">Other</h2>
         <i class="devicon-git-plain colored"></i>
         <i class="devicon-amazonwebservices-plain colored"></i>
         <i class="devicon-tomcat-line colored"></i>
