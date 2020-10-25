@@ -12,6 +12,9 @@
 
 .user-projects {
   margin: 20px auto;
+  .small-logo {
+    max-width: 60%;
+  }
   img {
     max-width: 100%;
     height: auto;
