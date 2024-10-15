@@ -1,37 +1,30 @@
-# home-page
-Jekyll based home page
+<h1 align="center">
+  <br>
+  <a href="https://hsellik.github.io"><img src="./public/logo.svg" alt="Markdownify" width="200"></a>
+  <br>
+  Hendrig's Home Page
+  <br>
+</h1>
 
-Features:
+<h4 align="center">My home page built using Vite, React, ThreeJS and Tailwind CSS</h4>
 
-- Gulp
-- SASS
-- Sweet Scroll
-- Particle.js
-- BrowserSync
-- Font Awesome and Devicon icons
-- Google Analytics
-- Info Customization
+## :zap: Quickstart
 
-## Basic Setup
+First, [download](https://nodejs.org/en) and install **Node.js**.
 
-1. [Install Jekyll](http://jekyllrb.com)
+Next, install dependencies and run the project:
 
-## Color and Particle Customization
-- Color Customization
-  - Edit the sass variables
-- Particle Customization
-  - Edit the json data in particle function in app.js
-  - Refer to [Particle.js](https://github.com/VincentGarreau/particles.js/) for help
+```bash
+# Installation:
+npm ci
 
-## Running the site in local
+# Running the application
+npm run dev
+```
 
-In order to compile the assets and run Jekyll on local you need to follow those steps:
+Set up Prettier for code linting. Install the plugin to your ide and use `.prettierrc.cjs` for the config.
 
-- Install [NodeJS](https://nodejs.org/)
-- Install [Jekyll](https://jekyllrb.com): `sudo gem install bundler jekyll`
-- Install Ruby-dev: `sudo apt-get install ruby-dev`
-- Install [Yarn](https://yarnpkg.com/): `npm install -g yarn`
-- Set bundler path: `bundle config set path 'vendor/bundle'`
-- Install [Jekyll Plugins](https://jekyllrb.com/docs/plugins/installation/): `bundle install --path vendor/bundle`
-- Install dependencies: `yarn`
-- Run Gulp: `node ./node_modules/gulp/bin/gulp.js`
+## Deployment
+
+Deployment is run via GitLab CI manual step. `FLY_ACCESS_TOKEN` needs to be present
+for the deployment to work.
