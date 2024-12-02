@@ -26,5 +26,6 @@ Set up Prettier for code linting. Install the plugin to your ide and use `.prett
 
 ## Deployment
 
-Deployment is run via GitLab CI manual step. `FLY_ACCESS_TOKEN` needs to be present
-for the deployment to work.
+This site uses [gh-pages](https://www.npmjs.com/package/gh-pages) to build the site and deploy to Github Pages. Use the
+following command to run it:  
+`npm run deploy`
