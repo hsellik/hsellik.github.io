@@ -26,7 +26,7 @@ Set up Prettier for code linting. Install the plugin to your ide and use `.prett
 
 ## Deployment
 
-Firstly build the site and use [gh-pages](https://www.npmjs.com/package/gh-pages) to deploy to Github Pages. Use the
+Firstly build the site and use [gh-pages](https: //www.npmjs.com/package/gh-pages) to deploy to Github Pages. Use the
 following commands:  
 ```bash
 npm run build
