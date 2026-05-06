@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import heroPhoto from './hero-photo.webp';
 import sellik from './sellik.png';
 import backend from './backend.png';
@@ -34,7 +33,6 @@ import icefire from './company/icefire.png';
 import ringit from './company/ringit.png';
 
 export {
-  logo,
   heroPhoto,
   backend,
   creator,
