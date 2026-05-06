@@ -71,14 +71,23 @@ const Contact = () => {
         <motion.div variants={slideIn('left', 'tween', 0.2, 1)} className="flex-[0.75] bg-black-100 p-6 rounded-2xl">
             <p className={styles.sectionSubText}>Get in touch</p>
             <span className="flex gap-5 items-center">
-          <h3 className={styles.sectionHeadText}>Contact</h3>
+          <a href="https://www.linkedin.com/in/hendrig-sellik-9ba423113" target="_blank" rel="noreferrer">
+            <h3 className={`${styles.sectionHeadText} hover:text-gold transition-colors duration-300`}>Contact</h3>
+          </a>
 
-          <a href="https://www.linkedin.com/in/hendrig-sellik-9ba423113" target="_blank">
+          <a href="https://www.linkedin.com/in/hendrig-sellik-9ba423113" target="_blank" rel="noreferrer" className="text-white hover:text-gold transition-colors duration-300">
             <FaLinkedin size={'3em'}/>
           </a>
         </span>
 
-            <p>Contact me on Linkedin</p>
+            <a
+              href="https://www.linkedin.com/in/hendrig-sellik-9ba423113"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-gold transition-colors duration-300"
+            >
+              Contact me on Linkedin
+            </a>
 
             <form ref={formRef} onSubmit={handleSubmit} className="hidden mt-12 flex flex-col gap-8">
                 <label className="flex flex-col">
@@ -125,8 +134,8 @@ const Contact = () => {
         </motion.div>
 
         <motion.div variants={slideIn('right', 'tween', 0.2, 1)} className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
-        <EarthCanvas />
-      </motion.div>
+          <EarthCanvas />
+        </motion.div>
     </div>
   );
 };

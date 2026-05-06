@@ -18,10 +18,12 @@ import {
   adyen,
   cgi,
   gscan,
+  gridraven,
   icefire,
   ringit,
   threejs,
   merchantmind,
+  bonded,
 } from '../assets';
 
 export const navLinks = [
@@ -116,10 +118,23 @@ const technologies = [
 const experiences = [
   {
     title: 'Senior Software Engineer',
+    company_name: 'Gridraven (Tallinn, Estonia)',
+    icon: gridraven,
+    iconBg: 'white',
+    date: 'July 2025 - present',
+    points: [
+      'Bridging AI model outputs to the frontend via FastAPI, backed by distributed Celery task queues.',
+      'Handling large-scale data storage and querying with Ducklake and DuckDB, accelerated by Redis-backed caching.',
+      'Optimizing parallel pipelines to feed AI models and process their results at speed.',
+      'DevOps on Google Cloud with responsive auto-scaling powered by KEDA.',
+    ],
+  },
+  {
+    title: 'Senior Software Engineer',
     company_name: 'GScan (Tallinn, Estonia)',
     icon: gscan,
     iconBg: 'white',
-    date: 'November 2023 - present',
+    date: 'November 2023 - July 2025',
     points: [
       'Leading frontend development and using novel solution to display large 3D volumetric data through the web browser',
       'Actively contributing to Python backend system',
@@ -186,25 +201,50 @@ const testimonials = [
 
 const projects = [
   {
+    name: 'Bonded',
+    description:
+      'Mobile and web platform for creating meaningful connections. Built with a modern cross-platform stack for seamless experience across iOS, Android and web.',
+    tags: [
+      {
+        name: 'Flutter',
+        color: 'text-[#54C5F8]',
+      },
+      {
+        name: 'Supabase',
+        color: 'text-[#3ECF8E]',
+      },
+      {
+        name: 'Next.js',
+        color: 'text-[#e2e8f0]',
+      },
+      {
+        name: 'React',
+        color: 'text-[#61DAFB]',
+      },
+    ],
+    image: bonded,
+    source_code_link: 'https://bondedapp.eu/',
+  },
+  {
     name: 'MerchantMind',
     description:
       'Web-based platform that allows users to create a shopping cart after answering a questionnaire. A back-office for shop owners to manage products, questions and rules for questionnaires.',
     tags: [
       {
         name: 'Vue',
-        color: 'green-text-gradient',
+        color: 'text-[#42B883]',
       },
       {
         name: 'Tailwind',
-        color: 'pink-text-gradient',
+        color: 'text-[#06B6D4]',
       },
       {
         name: 'Java',
-        color: 'orange-text-gradient',
+        color: 'text-[#ED8B00]',
       },
       {
         name: 'Spring',
-        color: 'blue-text-gradient',
+        color: 'text-[#6DB33F]',
       },
     ],
     image: merchantmind,
