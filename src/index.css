@@ -1,21 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
-  color-scheme: dark;
+@theme {
+  --color-primary: #050505;
+  --color-secondary: #8a8070;
+  --color-tertiary: #0d0d0b;
+  --color-quaternary: #141410;
+  --color-gold: #D4AF37;
+  --color-gold-light: #FFD700;
+  --color-gold-dim: #8B7536;
+  --color-gold-warm: #C9A227;
+  --color-black-100: #0a0a08;
+  --color-black-200: #080806;
+  --color-white-100: #f3f3f3;
+
+  --shadow-card: 0px 35px 120px -15px rgba(212, 175, 55, 0.15);
+  --shadow-gold-glow: 0 0 20px rgba(212, 175, 55, 0.4), 0 0 60px rgba(212, 175, 55, 0.15);
+  --shadow-gold-sm: 0 0 10px rgba(212, 175, 55, 0.3);
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(212, 175, 55, 0.1);
+
+  --breakpoint-xs: 450px;
+  --breakpoint-3xl: 1920px;
+
+  --background-image-hero-pattern: url('/src/assets/herobg.png');
+  --background-image-gold-gradient: linear-gradient(135deg, #FFD700, #D4AF37, #C9A227);
+  --background-image-gold-shimmer: linear-gradient(90deg, #8B7536 0%, #FFD700 25%, #D4AF37 50%, #FFD700 75%, #8B7536 100%);
+
+  --blur-xs: 2px;
+
+  --animate-shimmer: shimmer 3s linear infinite;
+  --animate-float-slow: float 6s ease-in-out infinite;
+  --animate-pulse-gold: pulseGold 3s ease-in-out infinite;
+  --animate-blink: blink 1s ease-in-out infinite;
+  --animate-orb-1: floatOrb1 20s ease-in-out infinite;
+  --animate-orb-2: floatOrb2 25s ease-in-out infinite;
+  --animate-orb-3: floatOrb3 30s ease-in-out infinite;
 }
 
-html, body {
-  background: #050505;
-  overflow-x: hidden;
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  html, body {
+    background: #050505;
+    overflow-x: hidden;
+  }
 }
 
 .hero-bg {
